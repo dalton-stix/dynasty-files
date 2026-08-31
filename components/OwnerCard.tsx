@@ -1,28 +1,21 @@
-import type { Owner } from "@/lib/types";
-import { championshipCountsBySlug } from "@/data/champions";
-
-export default function OwnerCard({ owner }: { owner: Owner }) {
-  const titles = championshipCountsBySlug()[owner.slug] ?? 0;
-
+export default function OwnerCard({
+  teamName,
+  ownerName,
+  championships,
+}: {
+  teamName: string;
+  ownerName: string;
+  championships: number;
+}) {
   return (
-    <div className="flex flex-col border border-paper-line bg-paper-raised p-6">
-      <div>
-        <h3 className="font-display text-xl font-semibold text-ink">
-          {owner.teamName}
-        </h3>
-        <p className="mt-0.5 text-sm text-ink-muted">{owner.ownerName}</p>
-        <p className="mt-1 text-xs text-ink-faint">
-          Championships: {titles}
-        </p>
-      </div>
-      <ul className="mt-4 space-y-1.5 text-sm text-ink-muted">
-        {owner.facts.map((fact) => (
-          <li key={fact} className="flex gap-2">
-            <span className="text-gold-soft">&middot;</span>
-            <span>{fact}</span>
-          </li>
-        ))}
-      </ul>
+    <div className="border border-paper-line bg-paper-raised p-6">
+      <h3 className="font-display text-xl font-semibold text-ink">
+        {teamName}
+      </h3>
+      <p className="mt-1 text-sm text-ink-muted">{ownerName}</p>
+      <p className="mt-4 border-t border-paper-line pt-4 text-xs text-ink-faint">
+        Championships: {championships}
+      </p>
     </div>
   );
 }

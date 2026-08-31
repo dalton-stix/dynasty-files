@@ -1,5 +1,8 @@
 import type { Owner } from "@/lib/types";
 
+// `facts` and `pcmCrew` are private editorial context for writing issues —
+// personality notes, friendships, rivalries, running jokes. They are not
+// rendered on the public site. See the Owner type for details.
 export const owners: Owner[] = [
   {
     slug: "jacob-loughman",

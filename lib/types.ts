@@ -22,6 +22,10 @@ export type Owner = {
   slug: string;
   ownerName: string;
   teamName: string;
+  // Internal editorial context only — for writing issues, not for public
+  // rendering. Do not pass these fields into components that render the
+  // public site; The League page shows only slug/ownerName/teamName plus a
+  // derived championship count.
   pcmCrew: boolean;
   founding: boolean;
   facts: string[];

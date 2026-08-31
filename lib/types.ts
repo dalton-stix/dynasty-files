@@ -35,19 +35,18 @@ export type Champion = {
   note?: string;
 };
 
-export type RankingEntry = {
-  rank: number;
-  team: string;
-  owner: string;
-  movement: number | "new" | "-";
-  commentary?: string;
+export type RankingSlot = {
+  ownerSlug: string; // matches Owner.slug
+  note?: string; // short editorial blurb explaining the ranking decision
 };
 
-export type RankingWeek = {
+export type RankingPeriod = {
   season: number;
-  week: string;
-  date: string;
-  entries: RankingEntry[];
+  period: string; // machine id, e.g. "preseason", "week-1"
+  label: string; // display label, e.g. "Preseason", "Week 1"
+  date: string; // ISO published date
+  order: number; // chronological order within the season (preseason = 0, week 1 = 1, ...)
+  rankings: RankingSlot[]; // ordered — rank is derived from position (index + 1)
 };
 
 export type Receipt = {

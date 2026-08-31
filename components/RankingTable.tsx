@@ -1,58 +1,70 @@
-import type { RankingWeek } from "@/lib/types";
+import type { ComputedRankingEntry, Movement } from "@/lib/rankings";
 
-function MovementBadge({ movement }: { movement: RankingWeek["entries"][number]["movement"] }) {
-  if (movement === "new") {
+function MovementIndicator({ movement }: { movement: Movement }) {
+  if (movement.type === "up") {
+    return (
+      <span className="flex items-center gap-1 text-moss">
+        <span aria-hidden>&uarr;</span>
+        <span className="text-sm font-semibold">{movement.delta}</span>
+        <span className="sr-only">Up {movement.delta}</span>
+      </span>
+    );
+  }
+
+  if (movement.type === "down") {
+    return (
+      <span className="flex items-center gap-1 text-brick">
+        <span aria-hidden>&darr;</span>
+        <span className="text-sm font-semibold">{movement.delta}</span>
+        <span className="sr-only">Down {movement.delta}</span>
+      </span>
+    );
+  }
+
+  if (movement.type === "new") {
     return <span className="text-xs font-semibold text-gold">NEW</span>;
   }
-  if (movement === "-" || movement === 0) {
-    return <span className="text-ink-faint">&mdash;</span>;
-  }
-  const isUp = movement > 0;
+
   return (
-    <span
-      className={`text-xs font-semibold ${isUp ? "text-moss" : "text-brick"}`}
-    >
-      {isUp ? "↑" : "↓"} {Math.abs(movement)}
+    <span className="text-ink-faint" aria-label="No change">
+      &mdash;
     </span>
   );
 }
 
-export default function RankingTable({ week }: { week: RankingWeek }) {
+export default function RankingTable({
+  entries,
+}: {
+  entries: ComputedRankingEntry[];
+}) {
   return (
-    <div>
-      <div className="flex items-baseline justify-between">
-        <h2 className="font-display text-2xl font-semibold text-ink">
-          {week.season} &middot; {week.week}
-        </h2>
-      </div>
-      <ul className="mt-4 divide-y divide-paper-line border-t border-b border-paper-line">
-        {week.entries
-          .sort((a, b) => a.rank - b.rank)
-          .map((entry) => (
-            <li
-              key={entry.rank}
-              className="flex items-start gap-4 py-4"
-            >
-              <span className="w-6 shrink-0 font-display text-xl text-gold">
-                {entry.rank}
-              </span>
-              <div className="flex-1">
-                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                  <span className="font-medium text-ink">{entry.team}</span>
-                  <span className="text-xs text-ink-faint">
-                    {entry.owner}
-                  </span>
-                  <MovementBadge movement={entry.movement} />
-                </div>
-                {entry.commentary ? (
-                  <p className="mt-1 text-sm text-ink-muted">
-                    {entry.commentary}
-                  </p>
-                ) : null}
-              </div>
-            </li>
-          ))}
-      </ul>
-    </div>
+    <ol className="divide-y divide-paper-line border-t border-b border-paper-line">
+      {entries.map((entry) => (
+        <li
+          key={entry.ownerSlug}
+          className={`flex gap-4 py-4 sm:gap-6 ${
+            entry.note ? "items-start" : "items-center"
+          }`}
+        >
+          <span className="w-9 shrink-0 font-display text-2xl text-gold tabular-nums">
+            {String(entry.rank).padStart(2, "0")}
+          </span>
+          <div className="min-w-0 flex-1">
+            <p className="truncate text-sm font-semibold tracking-wide text-ink uppercase">
+              {entry.teamName}
+            </p>
+            <p className="truncate text-xs text-ink-muted">
+              {entry.ownerName}
+            </p>
+            {entry.note ? (
+              <p className="mt-2 text-sm text-ink-muted">{entry.note}</p>
+            ) : null}
+          </div>
+          <div className="shrink-0">
+            <MovementIndicator movement={entry.movement} />
+          </div>
+        </li>
+      ))}
+    </ol>
   );
 }

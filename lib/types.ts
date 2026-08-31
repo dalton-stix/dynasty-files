@@ -30,6 +30,7 @@ export type Owner = {
 export type Champion = {
   year: number;
   champion: string;
+  championSlug: string; // matches Owner.slug — used to link this record to the owner regardless of display-name formatting
   runnerUp: string;
   note?: string;
 };

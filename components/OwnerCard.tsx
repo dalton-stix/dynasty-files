@@ -1,8 +1,8 @@
 import type { Owner } from "@/lib/types";
-import { championshipCounts } from "@/data/champions";
+import { championshipCountsBySlug } from "@/data/champions";
 
 export default function OwnerCard({ owner }: { owner: Owner }) {
-  const titles = championshipCounts()[owner.ownerName] ?? 0;
+  const titles = championshipCountsBySlug()[owner.slug] ?? 0;
 
   return (
     <div className="flex flex-col border border-paper-line bg-paper-raised p-6">

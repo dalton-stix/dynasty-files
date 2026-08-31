@@ -16,7 +16,7 @@ export default function ChampionsPage() {
 
   const reigningChampion = [...champions].sort((a, b) => b.year - a.year)[0];
   const reigningChampionTeam = owners.find(
-    (owner) => owner.ownerName === reigningChampion.champion,
+    (owner) => owner.slug === reigningChampion.championSlug,
   )?.teamName;
 
   return (

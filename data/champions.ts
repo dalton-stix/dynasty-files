@@ -43,6 +43,7 @@ export const champions: Champion[] = [
     champion: "Jacob Loughman",
     championSlug: "jacob-loughman",
     runnerUp: "Evan DeCovich",
+    teamNameAtTime: "The Dog",
   },
 ];
 

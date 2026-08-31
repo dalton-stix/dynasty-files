@@ -77,7 +77,10 @@ export function computeRankings(period: RankingPeriod): ComputedRankingEntry[] {
     return {
       rank,
       ownerSlug: slot.ownerSlug,
-      teamName: owner?.teamName ?? slot.ownerSlug,
+      // Historical snapshot, not the owner's current team name — see
+      // RankingSlot.teamName. ownerName is resolved live from owners.ts
+      // since a person's name (unlike their team name) is treated as stable.
+      teamName: slot.teamName,
       ownerName: owner?.ownerName ?? slot.ownerSlug,
       movement,
       note: slot.note,

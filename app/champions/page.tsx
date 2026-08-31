@@ -10,9 +10,14 @@ export const metadata: Metadata = {
 
 export default function ChampionsPage() {
   const reigningChampion = [...champions].sort((a, b) => b.year - a.year)[0];
-  const reigningChampionTeam = owners.find(
-    (owner) => owner.slug === reigningChampion.championSlug,
-  )?.teamName;
+  // Prefer the historical snapshot (what the team was actually called when
+  // they won) so a later rename in owners.ts can't rewrite this. Falls back
+  // to the owner's current team name only for older records where we never
+  // recorded a snapshot — see Champion.teamNameAtTime.
+  const reigningChampionTeam =
+    reigningChampion.teamNameAtTime ??
+    owners.find((owner) => owner.slug === reigningChampion.championSlug)
+      ?.teamName;
 
   // Neutral per-owner title counts, ordered by each owner's first
   // championship year — not by total titles — so nobody is presented as a

@@ -37,10 +37,23 @@ export type Champion = {
   championSlug: string; // matches Owner.slug — used to link this record to the owner regardless of display-name formatting
   runnerUp: string;
   note?: string;
+  // Optional historical snapshot of the champion's team name at the time
+  // they won — NOT derived from Owner.teamName, which only reflects the
+  // CURRENT name and can change season to season. Only set this when we
+  // actually know what the team was called that year; leave it undefined
+  // rather than guessing for older records. The Reigning Champion feature
+  // on the Champions page prefers this field so it keeps reading correctly
+  // even after the owner renames their team in a later season.
+  teamNameAtTime?: string;
 };
 
 export type RankingSlot = {
-  ownerSlug: string; // matches Owner.slug
+  ownerSlug: string; // permanent identity — matches Owner.slug, used to track the same person across periods and calculate movement
+  // Snapshot of the team name as it was displayed during THIS ranking
+  // period. Owner.teamName only reflects the CURRENT name, so historical
+  // periods must carry their own copy here rather than resolving it live —
+  // otherwise a rename would silently rewrite past rankings.
+  teamName: string;
   note?: string; // short editorial blurb explaining the ranking decision
 };
 

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { champions, championshipCounts } from "@/data/champions";
+import { champions } from "@/data/champions";
 import { owners } from "@/data/owners";
 import Container from "@/components/Container";
 
@@ -9,15 +9,33 @@ export const metadata: Metadata = {
 };
 
 export default function ChampionsPage() {
-  const counts = championshipCounts();
-  const repeatChampions = Object.entries(counts)
-    .filter(([, count]) => count > 1)
-    .sort((a, b) => b[1] - a[1]);
-
   const reigningChampion = [...champions].sort((a, b) => b.year - a.year)[0];
   const reigningChampionTeam = owners.find(
     (owner) => owner.slug === reigningChampion.championSlug,
   )?.teamName;
+
+  // Neutral per-owner title counts, ordered by each owner's first
+  // championship year — not by total titles — so nobody is presented as a
+  // leaderboard leader. This is a historical record, not a ranking.
+  const championsBySlug = champions.reduce<
+    Record<string, { name: string; firstYear: number; count: number }>
+  >((acc, entry) => {
+    const existing = acc[entry.championSlug];
+    if (existing) {
+      existing.count += 1;
+      existing.firstYear = Math.min(existing.firstYear, entry.year);
+    } else {
+      acc[entry.championSlug] = {
+        name: entry.champion,
+        firstYear: entry.year,
+        count: 1,
+      };
+    }
+    return acc;
+  }, {});
+  const championTotals = Object.values(championsBySlug).sort(
+    (a, b) => a.firstYear - b.firstYear,
+  );
 
   return (
     <Container className="py-14">
@@ -47,19 +65,6 @@ export default function ChampionsPage() {
         </p>
       </div>
 
-      {repeatChampions.length > 0 ? (
-        <div className="mx-auto mt-8 flex max-w-2xl flex-wrap justify-center gap-3">
-          {repeatChampions.map(([name, count]) => (
-            <span
-              key={name}
-              className="rounded-full border border-gold-soft px-3 py-1 text-xs text-gold"
-            >
-              {name} &middot; {count}&times; Champion
-            </span>
-          ))}
-        </div>
-      ) : null}
-
       <div className="mx-auto mt-12 max-w-2xl overflow-x-auto">
         <table className="w-full border-collapse text-sm">
           <thead>
@@ -80,15 +85,8 @@ export default function ChampionsPage() {
                   <td className="py-4 pr-4 font-display text-lg text-gold">
                     {entry.year}
                   </td>
-                  <td className="py-4 pr-4">
-                    <span className="font-medium text-ink">
-                      {entry.champion}
-                    </span>
-                    {counts[entry.champion] > 1 ? (
-                      <span className="ml-2 text-xs text-ink-faint">
-                        {counts[entry.champion]}&times; Champion
-                      </span>
-                    ) : null}
+                  <td className="py-4 pr-4 font-medium text-ink">
+                    {entry.champion}
                   </td>
                   <td className="py-4 pr-4 text-ink-muted">
                     {entry.runnerUp}
@@ -102,6 +100,23 @@ export default function ChampionsPage() {
               ))}
           </tbody>
         </table>
+      </div>
+
+      <div className="mx-auto mt-16 max-w-2xl border-t border-paper-line pt-10">
+        <h2 className="text-center font-display text-2xl font-semibold text-ink">
+          Championships by Owner
+        </h2>
+        <ul className="mt-6 divide-y divide-paper-line border-t border-b border-paper-line">
+          {championTotals.map((entry) => (
+            <li
+              key={entry.name}
+              className="flex items-center justify-between py-3 text-sm"
+            >
+              <span className="text-ink">{entry.name}</span>
+              <span className="text-ink-muted">{entry.count}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </Container>
   );

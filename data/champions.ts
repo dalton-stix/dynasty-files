@@ -46,16 +46,6 @@ export const champions: Champion[] = [
   },
 ];
 
-// Keyed by champion display name — used where the champions data renders itself
-// (this page's own table and repeat-champion badges), so name formatting stays
-// self-consistent regardless of how other pages display an owner's name.
-export function championshipCounts(): Record<string, number> {
-  return champions.reduce<Record<string, number>>((counts, entry) => {
-    counts[entry.champion] = (counts[entry.champion] ?? 0) + 1;
-    return counts;
-  }, {});
-}
-
 // Keyed by owner slug — used to link a championship count to an Owner record,
 // since Owner.ownerName may include a nickname that champion/runnerUp strings don't.
 export function championshipCountsBySlug(): Record<string, number> {

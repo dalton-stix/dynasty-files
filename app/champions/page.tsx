@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { champions, championshipCounts } from "@/data/champions";
+import { owners } from "@/data/owners";
 import Container from "@/components/Container";
 
 export const metadata: Metadata = {
@@ -12,6 +13,11 @@ export default function ChampionsPage() {
   const repeatChampions = Object.entries(counts)
     .filter(([, count]) => count > 1)
     .sort((a, b) => b[1] - a[1]);
+
+  const reigningChampion = [...champions].sort((a, b) => b.year - a.year)[0];
+  const reigningChampionTeam = owners.find(
+    (owner) => owner.ownerName === reigningChampion.champion,
+  )?.teamName;
 
   return (
     <Container className="py-14">
@@ -28,6 +34,19 @@ export default function ChampionsPage() {
         </p>
       </div>
 
+      <div className="mx-auto mt-10 max-w-2xl border border-gold-soft bg-paper-raised px-6 py-10 text-center">
+        <p className="text-xs font-semibold tracking-[0.35em] text-gold uppercase">
+          Reigning Champion
+        </p>
+        <h2 className="mt-4 font-display text-4xl font-semibold text-ink sm:text-5xl">
+          {reigningChampion.champion}
+        </h2>
+        <p className="mt-2 text-ink-muted">
+          {reigningChampion.year} Champion
+          {reigningChampionTeam ? ` · ${reigningChampionTeam}` : ""}
+        </p>
+      </div>
+
       {repeatChampions.length > 0 ? (
         <div className="mx-auto mt-8 flex max-w-2xl flex-wrap justify-center gap-3">
           {repeatChampions.map(([name, count]) => (
@@ -35,7 +54,7 @@ export default function ChampionsPage() {
               key={name}
               className="rounded-full border border-gold-soft px-3 py-1 text-xs text-gold"
             >
-              {name} &middot; {count}x champion
+              {name} &middot; {count}&times; Champion
             </span>
           ))}
         </div>
@@ -66,8 +85,8 @@ export default function ChampionsPage() {
                       {entry.champion}
                     </span>
                     {counts[entry.champion] > 1 ? (
-                      <span className="ml-2 text-xs text-gold">
-                        {"🏆".repeat(counts[entry.champion])}
+                      <span className="ml-2 text-xs text-ink-faint">
+                        {counts[entry.champion]}&times; Champion
                       </span>
                     ) : null}
                   </td>

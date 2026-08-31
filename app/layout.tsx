@@ -16,7 +16,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://thedynastyfiles.vercel.app";
+const siteUrl = "https://dynasty-files.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

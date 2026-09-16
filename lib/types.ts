@@ -67,14 +67,18 @@ export type RankingPeriod = {
 };
 
 export type Receipt = {
-  id: string;
+  id: string; // stable identifier — future updates should amend the matching entry, not add a new one
   placeholder: boolean;
-  quote: string;
+  quote: string; // the take itself — a direct quote, or a factual summary when isQuote is false
+  isQuote?: boolean; // false = quote is a factual statement (e.g. a transaction), rendered without quotation marks. Defaults to true.
   owner?: string;
-  date?: string;
+  date?: string; // when the take/transaction originally happened
+  updateLabel?: string; // label for the secondary date line, e.g. "Outcome" or "Latest update"
+  updateDate?: string; // the date/period tied to updateLabel, e.g. "2026 Week 1"
   context?: string;
   outcome?: string;
-  issueLink?: string;
+  status?: string; // short standing line, e.g. "Open — dynasty return still developing."
+  links?: { label: string; href: string }[]; // related issues/pages this receipt ties back to
 };
 
 export type HallOfShameEntry = {

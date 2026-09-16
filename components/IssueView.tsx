@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import type { Issue } from "@/lib/types";
 import { formatDate } from "@/lib/format";
 import { getPreviousIssue } from "@/lib/issues";
@@ -54,7 +55,13 @@ export default function IssueView({
 
       <Container className="mt-10 sm:mt-14">
         <div className="article-body mx-auto max-w-2xl">
-          <MDXRemote source={issue.content} components={mdxComponents} />
+          <MDXRemote
+            source={issue.content}
+            components={mdxComponents}
+            options={{
+              mdxOptions: { remarkPlugins: [remarkGfm] },
+            }}
+          />
         </div>
       </Container>
 

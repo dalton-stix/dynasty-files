@@ -2,6 +2,7 @@ import type { MDXComponents } from "mdx/types";
 import type { TableHTMLAttributes } from "react";
 import PullQuote from "./mdx/PullQuote";
 import { StatGrid, Stat } from "./mdx/StatGrid";
+import Figure from "./mdx/Figure";
 
 // Wrap raw markdown tables in a scroll container so wide scoreboards and
 // standings tables never force the page to overflow horizontally on mobile.
@@ -17,5 +18,6 @@ export const mdxComponents: MDXComponents = {
   PullQuote,
   StatGrid,
   Stat,
+  Figure,
   table: Table,
 };

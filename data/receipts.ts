@@ -23,6 +23,10 @@ export const receipts: Receipt[] = [
         label: "The Commissioner Would Like His Apology",
         href: "/issues/2026/week-1",
       },
+      {
+        label: "View the Supreme Commissioner →",
+        href: "/hall-of-shame#supreme-commissioner-2026",
+      },
     ],
   },
   {

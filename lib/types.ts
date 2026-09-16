@@ -66,6 +66,8 @@ export type RankingPeriod = {
   rankings: RankingSlot[]; // ordered — rank is derived from position (index + 1)
 };
 
+export type RelatedLink = { label: string; href: string };
+
 export type Receipt = {
   id: string; // stable identifier — future updates should amend the matching entry, not add a new one
   placeholder: boolean;
@@ -78,13 +80,15 @@ export type Receipt = {
   context?: string;
   outcome?: string;
   status?: string; // short standing line, e.g. "Open — dynasty return still developing."
-  links?: { label: string; href: string }[]; // related issues/pages this receipt ties back to
+  links?: RelatedLink[]; // related issues/pages this receipt ties back to
 };
 
 export type HallOfShameEntry = {
-  id: string;
+  id: string; // stable identifier — also used as the #anchor other pages link to
   title: string;
   owner?: string;
   date?: string;
-  description: string;
+  description: string | string[]; // a single paragraph, or several for a longer story
+  image?: { src: string; alt: string }; // optional — most entries stay text-only
+  links?: RelatedLink[]; // related issues/pages this entry ties back to
 };

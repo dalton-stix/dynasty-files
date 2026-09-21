@@ -4,7 +4,11 @@
 
 The weekly newsletter and site of record for our 12-team dynasty fantasy football league (Sleeper league ID `1386354593331437568`). Built with Next.js, TypeScript, and Tailwind CSS. No database, no CMS, no auth — just static content and MDX.
 
+Live site: [dynasty-files.vercel.app](https://dynasty-files.vercel.app/). The complete editorial, verification, and publishing workflow is in [the weekly maintenance guide](docs/weekly-maintenance.md).
+
 ## Running locally
+
+Use Node.js 24 for the maintenance checks; the regression tests use its built-in TypeScript support.
 
 ```bash
 npm install
@@ -48,7 +52,7 @@ Everything that isn't a weekly article lives in `data/*.ts` as plain typed array
 
 - `data/owners.ts` — the 12 teams/owners on [The League](app/league/page.tsx) page
 - `data/champions.ts` — championship history on [Champions](app/champions/page.tsx)
-- `data/rankings.ts` — weekly power rankings (add a new `RankingWeek` to the front of the array)
+- `data/rankings.ts` — weekly power rankings (add a `RankingPeriod` with a unique season/period and the next chronological `order`; snapshot all 12 team names and keep the issue's ranking order consistent)
 - `data/receipts.ts` — old takes/predictions for [Receipts](app/receipts/page.tsx) (replace the placeholder entries with real ones as they come up; set `placeholder: false`)
 - `data/hallOfShame.ts` — infamous league moments
 
@@ -71,9 +75,9 @@ lib/                  Content-loading helpers (lib/issues.ts) and shared types
 
 ## Deploying to Vercel
 
-1. Push this repo to GitHub.
-2. In Vercel, "Add New Project" → import the GitHub repo. Framework preset (Next.js) is auto-detected — no config needed.
-3. Deploy. Every push to the main branch redeploys automatically; the production URL stays the same.
+The existing repository is [dalton-stix/dynasty-files](https://github.com/dalton-stix/dynasty-files), with production on `main`. Its Vercel project is `dynasty-files` in `stix-marketing-advisors`. Keep using this integration; a new project or import is unnecessary.
+
+Before pushing, run `npm test`, `npm run lint`, and `npm run build`, then inspect the rendered site and changed links. Push the reviewed commit to `main`, check that commit's Vercel status, and verify the public site. A successful local build or Git push alone is not deployment confirmation. See the maintenance guide for the full checklist and rollback process.
 
 ## Sleeper API
 

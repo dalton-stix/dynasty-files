@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
-import matter from "gray-matter";
-import type { Issue, IssueFrontmatter } from "./types";
+import type { Issue } from "./types";
+import { parseIssue } from "./issue-frontmatter";
 
 const ISSUES_DIR = path.join(process.cwd(), "content", "issues");
 
@@ -18,15 +18,7 @@ function walkMdxFiles(dir: string): string[] {
 
 function loadIssue(filePath: string): Issue {
   const raw = fs.readFileSync(filePath, "utf8");
-  const { data, content } = matter(raw);
-  const slug = path.basename(filePath, ".mdx");
-  const frontmatter = data as IssueFrontmatter;
-  return {
-    frontmatter,
-    slug,
-    season: frontmatter.season,
-    content,
-  };
+  return parseIssue(raw, filePath);
 }
 
 let cachedIssues: Issue[] | null = null;
@@ -36,7 +28,7 @@ export function getAllIssues(): Issue[] {
   const files = walkMdxFiles(ISSUES_DIR);
   const issues = files
     .map(loadIssue)
-    .filter((issue) => issue.frontmatter.published)
+    .filter((issue) => issue.frontmatter.published === true)
     .sort(
       (a, b) =>
         new Date(b.frontmatter.date).getTime() -

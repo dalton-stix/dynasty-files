@@ -1,3 +1,7 @@
+# The Dynasty Files maintenance
+
+Read [the weekly maintenance guide](docs/weekly-maintenance.md) before updating an issue, league data, or the publishing workflow. Use the published issues as the voice reference and preserve historical rankings, names, predictions, and receipts. Never invent results or chat quotes to fill missing inputs.
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 # This is NOT the Next.js you know

@@ -108,4 +108,73 @@ export const rankingPeriods: RankingPeriod[] = [
       },
     ],
   },
+  {
+    season: 2026,
+    period: "week-2",
+    label: "Week 2",
+    date: "2026-09-23",
+    order: 2,
+    rankings: [
+      {
+        ownerSlug: "jacob-loughman",
+        teamName: "The Dog",
+        note: "The defending champion leads total scoring and has finished first and second in the two weekly scoring lists. Joel is close. The trophy and the 344.19 keep Jacob here.",
+      },
+      {
+        ownerSlug: "joel-wiggins",
+        teamName: "Amon Ra Doggin",
+        note: "Two straight weeks above 160. Walker has started well, the veteran receivers just went off, and ranking him below second now would require me to stop looking at the results. The portrait stays.",
+      },
+      {
+        ownerSlug: "evan-decovich",
+        teamName: "Drunken Monkeys",
+        note: "Still undefeated. Still loaded. I like the depth and the ceiling enough to keep him narrowly ahead of Alex, but Joel has earned his way past. Moving down after scoring 147.60 is annoying; so is competing with this top group.",
+      },
+      {
+        ownerSlug: "alex-amadeo",
+        teamName: "Domestic Abusers",
+        note: "Third in cumulative scoring, 2–0, and JSN just delivered 41.25. He is close enough to Deco that the order deserves another look next week. For now, the next useful evidence is a matchup with unbeaten Hutch.",
+      },
+      {
+        ownerSlug: "hutch-burns",
+        teamName: "hburns",
+        note: "Allen has produced 89.08 in two starts. Hutch keeps winning comfortably, even with this week's scoring dropping to sixth. Alex will give us a better read on the supporting cast.",
+      },
+      {
+        ownerSlug: "josh-paul",
+        teamName: "#TrustTheProcess",
+        note: "Sixth in Week 1 scoring, fifth in Week 2, and now a win to show for it. Goff, Smith and Olave earned the promotion. Beating the editor expedited the paperwork.",
+      },
+      {
+        ownerSlug: "kyle-lucas",
+        teamName: "kylelucas28",
+        note: "The record is ugly; the first two opponents are a combined 4–0. Kyle is seventh in season scoring, and the quarterback decision was correct. There is enough here to keep the playoff flag planted, though the flag is taking weather damage.",
+      },
+      {
+        ownerSlug: "dalton-speers",
+        teamName: "3rdDownConversionTherapy🏆",
+        note: "Third in August. Sixth last week. Eighth today. At this rate, the rankings page will need a basement. I need a win more than another explanation of my roster's theoretical appeal.",
+      },
+      {
+        ownerSlug: "matt-choice",
+        teamName: "🏆 ’21",
+        note: "Taylor is doing his job. The team is ninth in cumulative scoring. The 1–1 record keeps the season perfectly workable, but the points aren't asking for a promotion.",
+      },
+      {
+        ownerSlug: "jordan-vanroekel",
+        teamName: "jordo41",
+        note: "An 82.79 doesn't earn a celebration. This move reflects Brandon sliding below him, plus Jordan's better two-week production. There is very little champagne involved in tenth place at 0–2.",
+      },
+      {
+        ownerSlug: "brandon-reeve",
+        teamName: "brandonreeve",
+        note: "Hampton supplied a bright spot. Two straight weeks below 90 supplied the ranking. The rebuild gets patience; the weekly column gets the actual score.",
+      },
+      {
+        ownerSlug: "sam-munson",
+        teamName: "King Henry Hill",
+        note: "The score improved by 26.07. The opponent improved by 29.92. That's a brutal way to make progress. A Week 3 win over me would supply considerably more satisfying material.",
+      },
+    ],
+  },
 ];

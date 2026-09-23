@@ -85,7 +85,7 @@ export const owners: Owner[] = [
   {
     slug: "matt-choice",
     ownerName: "Matt Choice",
-    teamName: "🏆 '21",
+    teamName: "🏆 ’21",
     pcmCrew: false,
     founding: true,
     facts: [
@@ -98,7 +98,7 @@ export const owners: Owner[] = [
   {
     slug: "dalton-speers",
     ownerName: "Dalton Speers",
-    teamName: "3rdDownConversionTherapy",
+    teamName: "3rdDownConversionTherapy🏆",
     pcmCrew: false,
     founding: true,
     facts: [

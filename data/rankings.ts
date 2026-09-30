@@ -177,4 +177,73 @@ export const rankingPeriods: RankingPeriod[] = [
       },
     ],
   },
+  {
+    season: 2026,
+    period: "week-3",
+    label: "Week 3",
+    date: "2026-09-30",
+    order: 3,
+    rankings: [
+      {
+        ownerSlug: "jacob-loughman",
+        teamName: "The Dog",
+        note: "Three wins, two weekly highs and 491.39 total points. Gibbs just supplied 40.50, and Jacob is 32–1 in all-play. The defending champion keeps making the evidence irritatingly easy to interpret.",
+      },
+      {
+        ownerSlug: "joel-wiggins",
+        teamName: "Amon Ra Doggin",
+        note: "The week's third-best score lost by 1.01. That hurts the record, but 473.40 total points still rank second. Kyle interrupted the administration; he didn't make this roster stop being good.",
+      },
+      {
+        ownerSlug: "evan-decovich",
+        teamName: "Drunken Monkeys",
+        note: "Still 3–0, with 421.23 total points and enough receiving talent to survive uneven weeks. The $56 Ollie Gordon purchase adds a possible backfield option. The workload still has to justify the invoice.",
+      },
+      {
+        ownerSlug: "alex-amadeo",
+        teamName: "Domestic Abusers",
+        note: "Three wins, and JSN has supplied 75.11 over the last two weeks. Burrow and Purdy cover the quarterback position without Dart, but Hall and Puka's availability needs watching. Now comes unbeaten Jacob, who is considerably less accommodating than the standings page.",
+      },
+      {
+        ownerSlug: "kyle-lucas",
+        teamName: "kylelucas28",
+        note: "The 140.49 was second in weekly scoring and enough to end Joel's unbeaten start. Kyle's first three opponents are a combined 8–1; he caused the one loss. Reed's season-ending injury hurts the depth, but Bowers and Cook give this team a real argument.",
+      },
+      {
+        ownerSlug: "josh-paul",
+        teamName: "#TrustTheProcess",
+        note: "Bijan delivered 38.62, but 120.68 wasn't enough against Jordan. Fifth in cumulative scoring still gives the 1–2 team a case. Fannin's unused 22.35 offers a lineup discussion, not a reason to dismantle the process.",
+      },
+      {
+        ownerSlug: "hutch-burns",
+        teamName: "hburns",
+        note: "The record is still 2–1. The 83.01 and 340.91 season total make the supporting-cast question harder to dodge. When Allen scores 20.60 instead of nearly 48, somebody else has to answer the phone.",
+      },
+      {
+        ownerSlug: "jordan-vanroekel",
+        teamName: "jordo41",
+        note: "A 133.82-point first win, with Garrett Wilson and Juwan Johnson doing real work. Baker's injury complicates the next assignment, but Geno Smith is already on the roster. Jordan has an actual replacement to go with the draft-pick portfolio.",
+      },
+      {
+        ownerSlug: "dalton-speers",
+        teamName: "3rdDownConversionTherapy🏆",
+        note: "The first win arrived with the week's ninth-best score. Achane's season-ending injury now removes a major piece of the lineup. The record improved; the next few weeks got harder.",
+      },
+      {
+        ownerSlug: "brandon-reeve",
+        teamName: "brandonreeve",
+        note: "The 0–3 remains ugly, but 118.89 was a 37.97-point improvement. London, Love and Skattebo gave the young roster something useful to show. One better week earns a step up, not a victory parade.",
+      },
+      {
+        ownerSlug: "matt-choice",
+        teamName: "🏆 ’21",
+        note: "Scores of 108.26, 93.88 and 78.49 have left Matt eleventh in total points at 280.63. The transactions remain lively. The starting lineup needs to participate in the activity.",
+      },
+      {
+        ownerSlug: "sam-munson",
+        teamName: "King Henry Hill",
+        note: "Darnold supplied 38.74 and the team still finished at 89.33. Getting the week's best starting-quarterback score should buy more relief than this. At 0–3, the rest of the lineup needs to turn a big individual day into a win.",
+      },
+    ],
+  },
 ];

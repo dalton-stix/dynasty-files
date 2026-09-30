@@ -19,6 +19,7 @@ export const hallOfShameEntries: HallOfShameEntry[] = [
       "The Ministry of Power Rankings has since issued a correction.",
       "Six-point passing touchdowns, one-point interceptions, and a portrait worthy of the new administration. Welcome to Joel's new America.",
       "Week 2 update — September 23, 2026: Joel followed the portrait with a league-high 170.90 and an 82.02-point win over Sam. He is 2–0 and has climbed to second in the power rankings. The exhibit keeps acquiring evidence.",
+      "Week 3 update — September 30, 2026: Kyle beat Joel 140.49–139.48. The regime fell by 1.01, despite Joel posting the week's third-highest score. He remains second in the power rankings. The portrait stays; the unbeaten record does not.",
     ],
     image: {
       src: "/images/joel-supreme-commissioner.png",
@@ -32,6 +33,10 @@ export const hallOfShameEntries: HallOfShameEntry[] = [
       {
         label: "Week 2: Five Correct Picks. One Personal Problem.",
         href: "/issues/2026/week-2",
+      },
+      {
+        label: "Week 3: The Regime Falls by 1.01.",
+        href: "/issues/2026/week-3",
       },
     ],
   },

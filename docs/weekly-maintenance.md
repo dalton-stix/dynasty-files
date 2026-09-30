@@ -17,7 +17,11 @@ This guide preserves the existing publication and deployment workflow. It is bas
 
 At the beginning of an update, establish the season/week, publication date, data cutoff in America/Chicago, and what Dalton wants covered. Read the latest published issue and its predictions before writing the next one.
 
-Use new inputs provided in the maintenance conversation: matchup results or screenshots, standings, trades, waivers, chat context, supplied media, and desired storylines. Public Sleeper data can corroborate scores and transactions. If there are no new weekly inputs, do not fabricate or publish a new issue. Ask once for what is missing; do not repeatedly notify about the same unchanged blocker.
+On each Wednesday run, gather the week's evidence autonomously. Dalton does not need to send a new message, upload scores or prompt the task again. Identify the latest completed, unpublished week from the league's season and last-scored leg, the actual weekly matchups, and the published archive. Pull scores, historical starters, standings, transactions, FAAB, player identities and pick ownership directly from Sleeper's public API. If a fetch method fails, try another supported read-only method; Node fetch has worked in this environment. Do not mistake an unavailable web-fetch method for unavailable league data.
+
+Use Dalton's messages, screenshots, media and desired storylines as additional context. Attempt to read current league chat through an existing authorized Sleeper browser session. Missing fresh chat or new user-supplied material alone does not block publication: state briefly that fresh chat could not be verified and write from the evidence available. Never invent quotes or represent old chatter as new. Research current injuries as described below.
+
+If a core result remains unavailable, unfinished or materially inconsistent after retrieval attempts, preserve the prepared work and identify the specific missing fact or failed check. Do not report "no new inputs" without checking the live sources. A complete verified edition should proceed through all page updates, checks and deployment under the existing authorization.
 
 Useful input checklist (partial inputs are welcome):
 
@@ -35,6 +39,8 @@ The brand is **The Dynasty Files**. The tagline is **Same league. New receipts.*
 
 Write in Dalton's first person. Use familiar, sharp friend-group banter, short conversational paragraphs, specific evidence, and well-timed punch lines. Occasional profanity fits the existing voice. Roast Dalton's team and failed predictions as readily as anyone else's. Cover every matchup without forcing every owner into the same joke or manufacturing controversy.
 
+Dalton's September 23 editorial direction: lead with the biggest league-wide story and give all 12 teams balanced attention. Keep his team's self-roasts brief; his voice is the narrator, but his team should not dominate the headline, opening, receipts and closing by default.
+
 Rankings and predictions can be confident opinions; label them accordingly. Keep receipts when the author is wrong. Use the archive for callbacks rather than inventing conversations, motives, injuries, league rules, or historical events. Let current results drive the story instead of repeating every running joke every week.
 
 Existing callbacks include Joel's scoring revolution, Kyle's 2019 Baker Mayfield startup pick, Hutch's close-game luck, Matt's elaborate trades, JP's process, Sam's rebuild, and the writer's preseason ranking of himself third and Joel seventh. Check the relevant issue before using a numerical or historical claim. Reigning champions, rosters, picks, and streaks change; old copy is not proof of their current state.
@@ -45,7 +51,7 @@ Preserve the published Week 1 structure as the working baseline. Headings can ad
 
 1. Headline, short deck, season/week, byline, and date.
 2. Opening essay / state of the league, built around the strongest story.
-3. **From the Chat: [headline]** — actual attributed messages and optional supplied media. If no chat material is available, say so in the draft rather than fabricate it.
+3. **From the Chat: [headline]** — actual attributed messages and optional supplied media. If fresh chat cannot be verified, say so briefly; proceed with the sourced issue without inventing chatter.
 4. **The Damage** — all six results, both scores, and winning margins.
 5. Six matchup recaps with distinct story-led headings.
 6. **Where Everybody Stands** — records, points for/against, and FAAB with an explicit cutoff.
@@ -74,6 +80,16 @@ Public league API base: `https://api.sleeper.app/v1/league/1386354593331437568`.
 Check score sums, margins, record totals, standings ordering, all 12 ranking identities, ranking movement, and upcoming pairings. Keep facts separate from editorial interpretation. Current taxi/IR eligibility does not prove historical eligibility. Bench totals may include incompatible positions and taxi/IR players; never describe the sum as a legal alternative lineup. Qualify hindsight substitutions.
 
 Use real chat messages supplied by Dalton or directly observed in an authorized league-chat session; the public Sleeper endpoints above do not prove chat content. Attribute quotes exactly. Do not infer injury causes, private intentions, or unobserved messages from low scores.
+
+### NFL injuries and their effect on this league
+
+Starting with the next edition after Week 2, follow Dalton's September 29 request to research major NFL injuries as part of preparing each issue. Refresh the research close to publication; do not carry last week's status or an early-week rumor forward as current fact.
+
+- Search current official NFL/team injury reports, team announcements and credible reporting. Cite the supporting article or report and record its date and the reporting cutoff. Distinguish a confirmed injury or roster designation from an uncertain diagnosis, practice status or reported recovery estimate. If a return timetable is unknown, say so.
+- Scan all 12 current Sleeper rosters and map affected players to owner identities. Consider injuries to relevant NFL teammates even when the injured player is unrostered, such as a quarterback injury affecting an owned receiver. Include backups and teammates whose opportunities may change, and verify whether they are owned, on taxi/IR or available before discussing roster depth, waiver options or trade implications.
+- Explain the actual effect on our league: who loses a starter, who has a plausible replacement, which owners may benefit from increased opportunity, and any meaningful effect on upcoming matchups, power rankings or dynasty outlook. Label these judgments as analysis; do not invent a guaranteed role, return date, medical prognosis or precise fantasy impact.
+- Distinguish an injury that affected the completed week's game from news that changes the following week's outlook. An injury does not prove why a player scored poorly without supporting evidence.
+- Give material developments a concise injury section, or integrate them clearly into the affected matchup recaps, rankings, wire and upcoming picks. Cover the league broadly, not primarily Dalton's roster. If the current research finds no major league-relevant developments, keep the note brief rather than forcing a story.
 
 ## Edit the site
 
@@ -122,6 +138,6 @@ For a failed deployment, inspect the build error and fix/redeploy. If a deployed
 
 ## Recurring runs
 
-The scheduler returns to the maintenance conversation and its new user inputs. It should check this guide and the latest published issue each run. No new inputs means no new issue. A completed week should not be republished on the next scheduled run: compare season/week and the last publication before editing.
+The existing automation runs Wednesdays at 9:00 a.m. America/Chicago. Each run must read this guide and the latest published issue, fetch current Sleeper evidence and identify the next completed unpublished week without waiting for a new user message. Complete the newsletter, homepage/archive update, power rankings, warranted receipts/Hall of Shame changes, verification and deployment in the scheduled run. Recheck the archive before publishing to avoid duplicate issues. If the latest completed week is already published or there is no completed regular-season week to cover, no new issue is needed. This local workflow requires the computer to be on and the app running.
 
 Notify Dalton when an update is complete, a check or deployment fails, or a specific input/action is needed. Stay quiet when nothing actionable has changed and the same missing-input request is already outstanding. Do not send league messages, emails, or other outreach as part of website maintenance.

@@ -246,4 +246,73 @@ export const rankingPeriods: RankingPeriod[] = [
       },
     ],
   },
+  {
+    season: 2026,
+    period: "week-4",
+    label: "Week 4",
+    date: "2026-10-07",
+    order: 4,
+    rankings: [
+      {
+        ownerSlug: "evan-decovich",
+        teamName: "Drunken Monkeys",
+        note: "Four wins, 581.15 points and 159.92 in a week when Chase barely contributed. The bench produced enough raw points to frighten several starting lineups. Chase's concussion matters; the depth keeps Deco on top while we wait.",
+      },
+      {
+        ownerSlug: "alex-amadeo",
+        teamName: "Domestic Abusers",
+        note: "Alex beat the defending champion and moved to 4–0. Burrow, Puka, Higgins and LaPorta all cleared 20. The running backs remain the obvious soft spot, but the receiver and quarterback depth has been strong enough to cover it.",
+      },
+      {
+        ownerSlug: "jacob-loughman",
+        teamName: "The Dog",
+        note: "One 9.53-point loss does not erase a league-high 622.77 or a 38–6 all-play record. The reigning champion is still the most productive team through four weeks. He drops because two other excellent teams remain perfect.",
+      },
+      {
+        ownerSlug: "joel-wiggins",
+        teamName: "Amon Ra Doggin",
+        note: "Second in points and back in the win column. Walker and Javonte combined for 63.48. Lamar's ankle creates a real downgrade for Week 5, but Lawrence gives Joel a usable replacement while the report develops.",
+      },
+      {
+        ownerSlug: "josh-paul",
+        teamName: "#TrustTheProcess",
+        note: "The weekly high moves JP to 2–2 and fifth in total scoring. Bijan, Kamara, Goff, Olave, Jameson and Brian Robinson all scored at least 15.70. That's a complete lineup, and Shipley now adds a possible short-term role behind Saquon's uncertainty.",
+      },
+      {
+        ownerSlug: "kyle-lucas",
+        teamName: "kylelucas28",
+        note: "Two consecutive wins after the league's hardest opening pair. Bowers and the running backs keep the foundation useful, and the Moore injury was initially described as not long term. JP's 161.23 forces the one-place drop more than anything Kyle did wrong.",
+      },
+      {
+        ownerSlug: "matt-choice",
+        teamName: "🏆 ’21",
+        note: "The week's third-best score and a 78.25-point win demand a correction. McMillan's 42.70 was the engine, and Maye's 34.80 on the bench gives Matt a quarterback decision. One huge week does not solve every earlier score; it does make eleventh indefensible.",
+      },
+      {
+        ownerSlug: "hutch-burns",
+        teamName: "hburns",
+        note: "Two straight losses, 457.81 total points and now a week-to-week Saquon. Allen, Hubbard and the running-back depth keep Hutch competitive. The ceiling becomes harder to reach if the first-round engine is absent.",
+      },
+      {
+        ownerSlug: "dalton-speers",
+        teamName: "3rdDownConversionTherapy🏆",
+        note: "The Week 4 score ranked ninth, the record is 1–3 and the roster responded by purchasing unemployed Joe Mixon for $20 and cutting him hours later. Nabers remains a legitimate weekly advantage. The rest of the plan currently resembles a group project without assigned roles.",
+      },
+      {
+        ownerSlug: "jordan-vanroekel",
+        teamName: "jordo41",
+        note: "Last in weekly scoring after a real Week 3 breakthrough. Coleman and Metcalf offered unused points, but the full lineup still lacked the firepower to approach Matt. The long-term draft capital is excellent. These rankings are about the team playing now.",
+      },
+      {
+        ownerSlug: "brandon-reeve",
+        teamName: "brandonreeve",
+        note: "Four losses and the second-lowest Week 4 score. Stroud's bench points would have improved the total without changing the result. The young roster still has London, Hampton, Love and Skattebo, but it needs them to deliver together.",
+      },
+      {
+        ownerSlug: "sam-munson",
+        teamName: "King Henry Hill",
+        note: "Hockenson and Emanuel Wilson scored 50.83 outside the lineup while the starters stayed below 100. Sam remains last in total scoring and 0–4. The rebuild can be coherent and the weekly team can still be twelfth; both are allowed to be true.",
+      },
+    ],
+  },
 ];

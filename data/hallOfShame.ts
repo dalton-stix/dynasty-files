@@ -40,4 +40,25 @@ export const hallOfShameEntries: HallOfShameEntry[] = [
       },
     ],
   },
+  {
+    id: "joe-mixon-faab-2026",
+    title: "$20 for 12 Hours of Joe Mixon",
+    owner: "Dalton Speers",
+    date: "2026 · Week 4",
+    description: [
+      "Seattle had already declined to sign Joe Mixon following a physical. Speers still won the Wednesday waiver claim for $20, dropping San Francisco's defense.",
+      "At 2:06 p.m. Central that same day, Speers dropped Mixon. The transaction produced zero points, no FAAB refund and one immediate admission in league chat: ‘That was a ridiculous $20 FAAB spend.’",
+      "The player is gone. The $20 is gone. The receipt is permanent.",
+    ],
+    links: [
+      {
+        label: "Week 4: The Unbeaten Table Has Two Seats.",
+        href: "/issues/2026/week-4",
+      },
+      {
+        label: "View the receipt →",
+        href: "/receipts#speers-joe-mixon-faab-2026",
+      },
+    ],
+  },
 ];

@@ -315,4 +315,73 @@ export const rankingPeriods: RankingPeriod[] = [
       },
     ],
   },
+  {
+    season: 2026,
+    period: "week-5",
+    label: "Week 5",
+    date: "2026-10-14",
+    order: 5,
+    rankings: [
+      {
+        ownerSlug: "alex-amadeo",
+        teamName: "Domestic Abusers",
+        note: "The last unbeaten team just scored 154.39. Alex is third in total scoring, fourth in all-play and has repeatedly covered the thin running-back room with elite production elsewhere. Five wins require the top spot."
+      },
+      {
+        ownerSlug: "jacob-loughman",
+        teamName: "The Dog",
+        note: "League-high 759.57 points, a 45–10 all-play record and a win over previously unbeaten Deco with zero from Mahomes. Jacob remains the strongest weekly scoring profile. Alex’s perfect record is the only reason this is second."
+      },
+      {
+        ownerSlug: "evan-decovich",
+        teamName: "Drunken Monkeys",
+        note: "The 7.23-point loss exposed lineup points but did not erase 710.72 or a 40–15 all-play mark. Stevenson now stands to benefit while Henderson is out, and Gordon finally produced in Deco’s starting lineup. The roster is still deep enough to remain in the top three."
+      },
+      {
+        ownerSlug: "joel-wiggins",
+        teamName: "Amon Ra Doggin",
+        note: "Second in points and 42–13 in all-play. A 126.28 loss to a 161.32 opponent is not a collapse. Lawrence handled Lamar’s absence, but the ceiling still depends on how quickly the starting quarterback returns."
+      },
+      {
+        ownerSlug: "matt-choice",
+        teamName: "🏆 ’21",
+        note: "Consecutive scores of 159.39 and 158.97 have changed the evidence. Maye’s 49.02 drove Week 5, and the lineup has now delivered two complete wins. Matt has moved from early-season emergency to legitimate top-half threat."
+      },
+      {
+        ownerSlug: "kyle-lucas",
+        teamName: "kylelucas28",
+        note: "Three straight wins after opening against Alex and Deco, starting with the win that ended Joel’s unbeaten run. Cook and Bowers keep the foundation strong. Deebo’s hamstring remains a concern, but Kyle has earned his place in the top six. Three wins in a row should buy more than another arrow pointing down."
+      },
+      {
+        ownerSlug: "hutch-burns",
+        teamName: "hburns",
+        note: "Hutch scored 161.32 without Saquon and ended a two-game slide. Allen and Jaylen Warren supplied 71.30 by themselves. Saquon’s status remains important, but Week 5 proved this roster is not one injury away from silence. The rebound earns a one-place climb; Kyle’s three-game streak keeps him just ahead."
+      },
+      {
+        ownerSlug: "josh-paul",
+        teamName: "#TrustTheProcess",
+        note: "JP remains fifth in all-play and fifth in total scoring, which is much stronger than the 2–3 record. The 118.85 loss, Shipley injury and Kamara’s 1.84 lower the immediate outlook. This is a three-place correction, not a declaration that the process failed."
+      },
+      {
+        ownerSlug: "dalton-speers",
+        teamName: "3rdDownConversionTherapy🏆",
+        note: "Scoring 202.53 usually causes a jump. Being 2–3 after declaring the season dead usually causes restraint. The roster showed the highest weekly ceiling in the league and now sits sixth in points. One spectacular Sunday earns belief; it does not rewrite four previous weeks."
+      },
+      {
+        ownerSlug: "jordan-vanroekel",
+        teamName: "jordo41",
+        note: "Rodgers, Evans and Garrett Wilson gave Jordan a competitive top three, but the full lineup stayed 42.42 behind Alex. Montgomery’s groin adds another Week 6 question. The future picks remain excellent. The current team is 1–4."
+      },
+      {
+        ownerSlug: "brandon-reeve",
+        teamName: "brandonreeve",
+        note: "The largest loss of the season was partly opponent-driven and partly another incomplete lineup. London remains productive, and Stroud offered bench points, but Brandon is 0–5 with the second-lowest total. Week 6 is the clearest opening yet."
+      },
+      {
+        ownerSlug: "sam-munson",
+        teamName: "King Henry Hill",
+        note: "The lowest weekly score, the lowest season total and now injuries to Henderson and Hockenson. The rebuild still has long-term pieces. The Week 6 roster has fewer healthy answers than it did before scoring 70.50."
+      }
+    ]
+  },
 ];

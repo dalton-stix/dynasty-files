@@ -61,4 +61,21 @@ export const hallOfShameEntries: HallOfShameEntry[] = [
       },
     ],
   },
+  {
+    id: "ferguson-undo-button-2026",
+    title: "I Didn’t Mean to Drop Ferg",
+    owner: "Dalton Speers",
+    date: "2026 · Week 6",
+    description: [
+      "On October 15, Speers added Pat Freiermuth and dropped Jake Ferguson, then told the league chat, ‘I didn’t mean to drop Ferg.’ Jacob prepared for a bidding war. Speers appealed to the Supreme Leader.",
+      "The commissioner removed Freiermuth and restored Ferguson. Speers then added Freiermuth again, this time dropping Dohnte Meyers. Freiermuth scored 2.60 in the Week 6 lineup; Ferguson scored 2.80 outside it.",
+      "Two tight ends. Several transactions. One government intervention."
+    ],
+    links: [
+      {
+        label: "Week 6: The League Discovers Ctrl+Z.",
+        href: "/issues/2026/week-6"
+      }
+    ]
+  },
 ];

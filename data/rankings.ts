@@ -384,4 +384,73 @@ export const rankingPeriods: RankingPeriod[] = [
       }
     ]
   },
+  {
+    season: 2026,
+    period: "week-6",
+    label: "Week 6",
+    date: "2026-10-21",
+    order: 6,
+    rankings: [
+      {
+        ownerSlug: "alex-amadeo",
+        teamName: "Domestic Abusers",
+        note: "Six wins, a two-game lead and another complete 137.45. The roster has met each assignment without needing every star to explode. Puka may see more opportunity without Adams, though the Rams’ losses also affect the offense and defense Alex owns. The top spot is uncomplicated."
+      },
+      {
+        ownerSlug: "joel-wiggins",
+        teamName: "Amon Ra Doggin",
+        note: "The weekly high and a 26.37-point win over Jacob break a near tie: 0.20 separates their season totals, and their all-play records match. Adams’ absence makes this a narrow call; Lawrence’s bye also means Joel needs a quarterback contingency if Lamar stays out. Amon-Ra, Golden and the running backs preserve the broader case. Winning the direct comparison earns a narrow edge, not immunity from the next injury report."
+      },
+      {
+        ownerSlug: "jacob-loughman",
+        teamName: "The Dog",
+        note: "Still first in points and tied first in all-play. A 119.06 loss to the highest scorer is not a collapse. McCaffrey, Kittle and the deep running-back group keep Jacob close enough to reclaim second immediately. This is a small separation between two 4–2 contenders."
+      },
+      {
+        ownerSlug: "kyle-lucas",
+        teamName: "kylelucas28",
+        note: "Four straight wins and the week’s third-highest score. Cook, Jeanty, Bowers and Stafford have built a repeatable foundation. The receiving injuries and Cook’s coming bye complicate Week 7, but four victories buy an actual promotion. The arrow finally matches the streak."
+      },
+      {
+        ownerSlug: "evan-decovich",
+        teamName: "Drunken Monkeys",
+        note: "Still fourth in points, still deep at receiver, now coming off 74.47 and two straight losses. Hurts’ indefinite absence, Monangai’s uncertain status and Henderson’s return all change the immediate outlook. This roster has answers, but the top-three assumption needs new evidence."
+      },
+      {
+        ownerSlug: "matt-choice",
+        teamName: "🏆 ’21",
+        note: "117.90 was respectable; losing McLaurin is the larger downgrade. Maye and Taylor remain a strong base, and Dell’s expected return plus Douglas’ arrival give Matt options without guaranteeing equal replacement production. The rebound survives one loss. The receiver room needs adjustment."
+      },
+      {
+        ownerSlug: "hutch-burns",
+        teamName: "hburns",
+        note: "I am not demoting a team because 110.16 lost to 110.29. Hutch still has the slightly better all-play profile than mine. Saquon’s status matters, and the Buffalo bye removes Allen and Shakir for a week; Caleb Williams provides a quarterback alternative. A bad beat is not a roster collapse."
+      },
+      {
+        ownerSlug: "dalton-speers",
+        teamName: "3rdDownConversionTherapy🏆",
+        note: "Two straight wins, 3–3 and sixth in points. The huge Week 5 ceiling has now been followed by an ordinary score that held up by almost nothing. Doubs’ IR move costs depth. I can move ahead of JP without claiming thirteen hundredths makes me better than Hutch."
+      },
+      {
+        ownerSlug: "josh-paul",
+        teamName: "#TrustTheProcess",
+        note: "Two straight losses and 84.27 lower the immediate case, even with a 34–32 all-play record that remains stronger than 2–4. Brown has returned; Warren’s availability and Philadelphia’s quarterback change still matter. The process needs more than 1.64 from its most extensively documented investment."
+      },
+      {
+        ownerSlug: "jordan-vanroekel",
+        teamName: "jordo41",
+        note: "The second win counts. The 90.92 and tenth-ranked season total still describe the current scoring profile. Evans, Mayfield and Montgomery need monitoring. Five 2027 firsts remain an excellent future asset; none can start against Joel on Sunday."
+      },
+      {
+        ownerSlug: "brandon-reeve",
+        teamName: "brandonreeve",
+        note: "The first win ends a miserable stretch. Stroud and Loveland showed useful production, but 99.21 remains below the league’s weekly average. McConkey’s concussion and the Chargers’ bye make the next assignment harder. The stairwell is progress. It is not the penthouse."
+      },
+      {
+        ownerSlug: "sam-munson",
+        teamName: "King Henry Hill",
+        note: "Henderson’s return is welcome, Tate supplied 17.50 and the young depth has future interest. The present remains 0–6, last in points and 7–59 in all-play. Sam needs several starters to improve together, not another isolated performance from the kicker."
+      }
+    ]
+  },
 ];

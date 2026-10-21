@@ -11,12 +11,12 @@ export const receipts: Receipt[] = [
     owner: "Dalton Speers",
     date: "August 31, 2026",
     updateLabel: "Latest update",
-    updateDate: "October 14, 2026",
+    updateDate: "October 21, 2026",
     context:
       'Speers ranked himself third and Joel seventh in the 2026 preseason issue, with Joel just outside his projected playoff six.',
     outcome:
-      "Joel won their Week 1 matchup 163.02–120.15, a 42.87-point response. Speers moved to sixth in the Week 1 power rankings; Joel climbed to third. JP then beat Speers 135.72–103.01 in Week 2. Through two weeks, Speers is 0–2 with 223.16 points, ninth in the standings and eighth in the power rankings. That quote remains available on a website I helped create. Week 3 update — September 30: Speers has his first win, a 1–2 record and 329.56 points, but sits ninth in the power rankings. Week 4 update — October 7: Speers lost 124.05–103.00 to Kyle, fell to 1–3 and remains ninth in the power rankings. The preseason quote is still doing more work than the team. Week 5 update — October 14: Speers beat Brandon 202.53–80.89, improved to 2–3 and remains ninth in the standings and power rankings. The season’s first 200-point score is a substantial counterpoint; the preseason third-place prediction remains open.",
-    status: "Through Week 5 — season predictions still open.",
+      "Joel won their Week 1 matchup 163.02–120.15, a 42.87-point response. Speers moved to sixth in the Week 1 power rankings; Joel climbed to third. JP then beat Speers 135.72–103.01 in Week 2. Through two weeks, Speers is 0–2 with 223.16 points, ninth in the standings and eighth in the power rankings. That quote remains available on a website I helped create. Week 3 update — September 30: Speers has his first win, a 1–2 record and 329.56 points, but sits ninth in the power rankings. Week 4 update — October 7: Speers lost 124.05–103.00 to Kyle, fell to 1–3 and remains ninth in the power rankings. The preseason quote is still doing more work than the team. Week 5 update — October 14: Speers beat Brandon 202.53–80.89, improved to 2–3 and remains ninth in the standings and power rankings. The season’s first 200-point score is a substantial counterpoint; the preseason third-place prediction remains open. Week 6 update — October 21: Speers beat Hutch 110.29–110.16, improved to 3–3, and moved to sixth in the standings and eighth in the power rankings. The preseason third-place call remains open.",
+    status: "Through Week 6 — season predictions still open.",
     links: [
       { label: "The 2026 Season Preview", href: "/issues/2026/preseason" },
       {
@@ -39,6 +39,10 @@ export const receipts: Receipt[] = [
         label: "The Unbeaten Table Has One Seat.",
         href: "/issues/2026/week-5",
       },
+      {
+        label: "Alex Is Perfect. The Rest of Us Need an Undo Button.",
+        href: "/issues/2026/week-6",
+      },
     ],
   },
   {
@@ -49,11 +53,11 @@ export const receipts: Receipt[] = [
     owner: "Josh Paul",
     date: "September 2, 2026",
     updateLabel: "Latest update",
-    updateDate: "October 14, 2026",
+    updateDate: "October 21, 2026",
     context:
       "The winning preseason bid beat Jacob's $40, Deco's $28, Matt's $25 and Alex's $13.",
     outcome:
-      "Lloyd scored 4.74 outside JP's Week 1 starting lineup. JP had $49 remaining after the September 16 waiver run. Lloyd added 9.08 outside the Week 2 lineup, and JP won without needing him in the starting lineup. JP has $46 remaining as of September 23 after paying $3 for Alvin Kamara. Record the numbers; leave the verdict open. Week 3 update — September 30: Lloyd scored 3.12 outside the starting lineup, bringing his three-week total to 16.94 with no starts for JP. Week 4 update — October 7: Lloyd scored 7.96 outside the lineup, bringing the four-week total to 24.90 with no starts. JP has $39 remaining after adding Will Shipley and Dallas's defense. Week 5 update — October 14: Lloyd scored 17.00 outside JP’s lineup, bringing his five-week total to 41.90 with no starts. JP is 2–3 with $39 remaining at the October 14 noon cutoff.",
+      "Lloyd scored 4.74 outside JP's Week 1 starting lineup. JP had $49 remaining after the September 16 waiver run. Lloyd added 9.08 outside the Week 2 lineup, and JP won without needing him in the starting lineup. JP has $46 remaining as of September 23 after paying $3 for Alvin Kamara. Record the numbers; leave the verdict open. Week 3 update — September 30: Lloyd scored 3.12 outside the starting lineup, bringing his three-week total to 16.94 with no starts for JP. Week 4 update — October 7: Lloyd scored 7.96 outside the lineup, bringing the four-week total to 24.90 with no starts. JP has $39 remaining after adding Will Shipley and Dallas's defense. Week 5 update — October 14: Lloyd scored 17.00 outside JP’s lineup, bringing his five-week total to 41.90 with no starts. JP is 2–3 with $39 remaining at the October 14 noon cutoff. Week 6 update — October 21: Lloyd made his first start for JP and scored 1.64 after producing 41.90 outside the first five starting lineups. His six-week total is 43.54, with 1.64 counted in JP’s starting lineups. JP is 2–4 and has $36 FAAB remaining. The dynasty return remains open.",
     status: "Open — dynasty return still developing.",
     links: [
       {
@@ -71,6 +75,10 @@ export const receipts: Receipt[] = [
       {
         label: "The Unbeaten Table Has One Seat.",
         href: "/issues/2026/week-5",
+      },
+      {
+        label: "Alex Is Perfect. The Rest of Us Need an Undo Button.",
+        href: "/issues/2026/week-6",
       },
     ],
   },
@@ -107,11 +115,11 @@ export const receipts: Receipt[] = [
     owner: "Dalton Speers",
     date: "September 23, 2026",
     updateLabel: "Latest update",
-    updateDate: "October 14, 2026",
+    updateDate: "October 21, 2026",
     context:
       "The post-Week-2 waiver run awarded Mitchell to Speers for $25, with Baltimore's defense dropped. His offer was $20 higher than the next bidder's. The other two claims failed and cost nothing.",
     outcome:
-      "Speers also spent $1 on Spencer Shrader that morning, leaving $74 of his $100 budget. After Week 2, the team was 0–2; Mitchell's return was still to come. If we're keeping JP's paperwork, we're keeping mine. Week 3 update — September 30: Mitchell scored zero outside the starting lineup. The $1 Shrader scored 19.70 inside it. Week 4 update — October 7: Mitchell supplied a second consecutive zero outside the lineup. Speers is 1–3 with $54 remaining after the Joe Mixon claim. The useful dollar has introduced itself; Mitchell's long-term return remains open. Week 5 update — October 14: Mitchell supplied a third consecutive zero outside the lineup and remains week to week after a hand procedure, per NFL reporting on October 14. Speers is 2–3 with $54 remaining. The injury does not settle the long-term return.",
+      "Speers also spent $1 on Spencer Shrader that morning, leaving $74 of his $100 budget. After Week 2, the team was 0–2; Mitchell's return was still to come. If we're keeping JP's paperwork, we're keeping mine. Week 3 update — September 30: Mitchell scored zero outside the starting lineup. The $1 Shrader scored 19.70 inside it. Week 4 update — October 7: Mitchell supplied a second consecutive zero outside the lineup. Speers is 1–3 with $54 remaining after the Joe Mixon claim. The useful dollar has introduced itself; Mitchell's long-term return remains open. Week 5 update — October 14: Mitchell supplied a third consecutive zero outside the lineup and remains week to week after a hand procedure, per NFL reporting on October 14. Speers is 2–3 with $54 remaining. The injury does not settle the long-term return. Week 6 update — October 21: Mitchell supplied a fourth consecutive zero outside the starting lineup since the $25 acquisition. The $1 Spencer Shrader has supplied 67.40 across four starts. Speers is 3–3 with $54 remaining. The medical timetable is not updated by this scoring receipt.",
     status: "Open — long-term return still developing.",
     links: [
       {
@@ -126,6 +134,10 @@ export const receipts: Receipt[] = [
         label: "The Unbeaten Table Has One Seat.",
         href: "/issues/2026/week-5",
       },
+      {
+        label: "Alex Is Perfect. The Rest of Us Need an Undo Button.",
+        href: "/issues/2026/week-6",
+      },
     ],
   },
   {
@@ -136,11 +148,11 @@ export const receipts: Receipt[] = [
     owner: "Evan DeCovich",
     date: "September 30, 2026",
     updateLabel: "Latest update",
-    updateDate: "October 14, 2026",
+    updateDate: "October 21, 2026",
     context:
       "The post-Week-3 waiver run awarded Gordon to Deco, with Justice Hill dropped. His winning offer was $23 higher than the next bidder's. The other three claims failed and cost nothing.",
     outcome:
-      "Deco has $39 of his $100 budget remaining. Week 4 update — October 7: Gordon scored 18.72 outside Deco's starting lineup. The production exists; the receipt still has not produced a starting point for Deco. Week 5 update — October 14: Gordon scored 16.24 in Deco’s starting lineup, his first starting return since the claim. Deco is 4–1 and has $37 remaining after a $2 Kansas City defense claim. The purchase is now producing starting points; the long-term verdict stays open.",
+      "Deco has $39 of his $100 budget remaining. Week 4 update — October 7: Gordon scored 18.72 outside Deco's starting lineup. The production exists; the receipt still has not produced a starting point for Deco. Week 5 update — October 14: Gordon scored 16.24 in Deco’s starting lineup, his first starting return since the claim. Deco is 4–1 and has $37 remaining after a $2 Kansas City defense claim. The purchase is now producing starting points; the long-term verdict stays open. Week 6 update — October 21: Gordon scored zero outside Deco’s lineup. His Week 4–6 rostered total is 34.96, with 16.24 counted in his one start. Deco is 4–2 with $37 remaining. No unrostered earlier-week scores are implied.",
     status: "Open — dynasty return still developing.",
     links: [
       {
@@ -150,6 +162,10 @@ export const receipts: Receipt[] = [
       {
         label: "The Unbeaten Table Has One Seat.",
         href: "/issues/2026/week-5",
+      },
+      {
+        label: "Alex Is Perfect. The Rest of Us Need an Undo Button.",
+        href: "/issues/2026/week-6",
       },
     ],
   },
@@ -235,10 +251,10 @@ export const receipts: Receipt[] = [
     isQuote: false,
     owner: "Dalton Speers",
     date: "2026 · Week 5",
-    updateLabel: "Outcome recorded",
-    updateDate: "October 14, 2026",
+    updateLabel: "Latest update",
+    updateDate: "October 21, 2026",
     context: "The Week 4 issue picked Kyle, JP, Joel, Alex, Speers and Jacob to win their Week 5 matchups.",
-    outcome: "Kyle, Alex, Speers and Jacob won. Matt beat the JP pick by 40.12, and Hutch beat the Joel pick by 35.04. The published season record moves from 13–5 to 17–7.",
+    outcome: "Kyle, Alex, Speers and Jacob won. Matt beat the JP pick by 40.12, and Hutch beat the Joel pick by 35.04. The published season record moves from 13–5 to 17–7. Source correction — October 21: Matt’s Week 5 margin is now 41.12 after a one-point Sleeper defensive-score adjustment. The original 40.12 figure above reflects the publication-day snapshot; the 4–2 pick result and 17–7 cumulative record are unchanged.",
     status: "Resolved — 4–2 for the week, 17–7 for the season.",
     links: [
       {
@@ -248,7 +264,11 @@ export const receipts: Receipt[] = [
       {
         label: "The Unbeaten Table Has One Seat.",
         href: "/issues/2026/week-5"
-      }
+      },
+      {
+        label: "Alex Is Perfect. The Rest of Us Need an Undo Button.",
+        href: "/issues/2026/week-6",
+      },
     ]
   },
   {
@@ -281,9 +301,9 @@ export const receipts: Receipt[] = [
     owner: "Matt Choice",
     date: "2026 · Weeks 4–5",
     updateLabel: "Latest update",
-    updateDate: "October 14, 2026",
+    updateDate: "October 21, 2026",
     context: "Matt ranked eleventh in total scoring after three weeks, with 280.63 points. Week 4’s 159.39 and 78.25-point win prompted an upward correction.",
-    outcome: "Week 5 added 158.97 and a 40.12-point win over JP. The two-week total is a league-high 318.36. Matt is 3–2 and rises to fifth in the Week 5 power rankings, while his season point total remains ninth.",
+    outcome: "Week 5 added 158.97 and a 40.12-point win over JP. The two-week total is a league-high 318.36. Matt is 3–2 and rises to fifth in the Week 5 power rankings, while his season point total remains ninth. Source correction — October 21: Sleeper increased Washington’s Week 5 defensive score from 10 to 11. Matt’s Week 5 result is now 159.97–118.85, a 41.12 margin, and his Week 4–5 total is 319.36. The original 158.97/318.36 reporting remains preserved above. Week 6: Matt scored 117.90 in a loss to Alex and is 3–3, sixth in the power rankings.",
     status: "Open — two-week rebound established; season continues.",
     links: [
       {
@@ -293,6 +313,33 @@ export const receipts: Receipt[] = [
       {
         label: "The Unbeaten Table Has One Seat.",
         href: "/issues/2026/week-5"
+      },
+      {
+        label: "Alex Is Perfect. The Rest of Us Need an Undo Button.",
+        href: "/issues/2026/week-6",
+      },
+    ]
+  },
+  {
+    id: "speers-week-6-picks-2026",
+    placeholder: false,
+    quote: "The Week 6 picks went 3–3, moving the published 2026 record to 20–10.",
+    isQuote: false,
+    owner: "Dalton Speers",
+    date: "2026 · Week 6",
+    updateLabel: "Outcome recorded",
+    updateDate: "October 21, 2026",
+    context: "The Week 5 issue picked Jacob, Deco, Kyle, Alex, Hutch and Brandon.",
+    outcome: "Kyle, Alex and Brandon won. Joel beat the Jacob pick by 26.37, Jordan beat the Deco pick by 16.45, and Speers beat the Hutch pick by 0.13. The published season record moves from 17–7 to 20–10.",
+    status: "Resolved — 3–3 for the week, 20–10 for the season.",
+    links: [
+      {
+        label: "The Week 6 picks",
+        href: "/issues/2026/week-5"
+      },
+      {
+        label: "Alex Is Perfect. The Rest of Us Need an Undo Button.",
+        href: "/issues/2026/week-6"
       }
     ]
   },
